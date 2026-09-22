@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="300" height="300" role="img" aria-labelledby="title">
   <title id="title">Símbolo A de Aigo Finance</title>
   <defs>
-    <linearGradient id="azulIzq" x1="0%" y1="100%" x2="80%" y2="0%">
+    <linearGradient id="azulAigo" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="900" y2="0">
       <stop offset="0%" stop-color="#06449E"/>
-      <stop offset="55%" stop-color="#075CB7"/>
-      <stop offset="100%" stop-color="#0871C5"/>
-    </linearGradient>
-    <linearGradient id="azulDer" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#078BD0"/>
+      <stop offset="48%" stop-color="#075CB7"/>
       <stop offset="100%" stop-color="#159FD4"/>
     </linearGradient>
   </defs>
-  <path d="M55 770 430 55 565 230 315 575H520L430 655Z" fill="url(#azulIzq)"/>
-  <path d="M430 55 565 230 810 770H650L485 455 415 535 330 575Z" fill="url(#azulDer)"/>
-  <path d="m315 575h205l-90 80H260Z" fill="#fff"/>
+
+  <!-- Silueta continua: dos piernas regulares, con hueco y travesaño legibles. -->
+  <path d="M70 770 405 85 Q430 38 450 38 Q470 38 495 85 L830 770 H635 L450 365 265 770Z"
+        fill="url(#azulAigo)"/>
+
+  <!-- Travesaño ancho y recto para que la A conserve su lectura en tamaños pequeños. -->
+  <path d="M320 610 365 505H535L580 610Z" fill="url(#azulAigo)"/>
 </svg>
