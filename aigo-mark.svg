@@ -1,17 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="300" height="300" role="img" aria-labelledby="title">
-  <title id="title">Símbolo A de Aigo Finance</title>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1040 960"
+     width="300"
+     height="277"
+     preserveAspectRatio="xMidYMid meet"
+     role="img"
+     aria-labelledby="aigo-mark-title">
+  <title id="aigo-mark-title">Símbolo A de Aigo Finance</title>
   <defs>
-    <linearGradient id="azulAigo" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="900" y2="0">
-      <stop offset="0%" stop-color="#06449E"/>
-      <stop offset="48%" stop-color="#075CB7"/>
-      <stop offset="100%" stop-color="#159FD4"/>
+    <linearGradient id="AIGO_BLUE_DARK" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#063F94"/>
+      <stop offset="45%" stop-color="#0757B3"/>
+      <stop offset="100%" stop-color="#0879C9"/>
+    </linearGradient>
+    <linearGradient id="AIGO_BLUE_LIGHT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0789CE"/>
+      <stop offset="100%" stop-color="#149ED3"/>
     </linearGradient>
   </defs>
 
-  <!-- Silueta continua: dos piernas regulares, con hueco y travesaño legibles. -->
-  <path d="M70 770 405 85 Q430 38 450 38 Q470 38 495 85 L830 770 H635 L450 365 265 770Z"
-        fill="url(#azulAigo)"/>
+  <path fill="url(#AIGO_BLUE_DARK)" d="
+    M 55 915
+    L 90 850
+    L 125 790
+    L 175 690
+    L 220 585
+    L 285 450
+    L 345 340
+    L 395 235
+    L 445 140
+    L 490 70
+    L 525 35
+    L 545 29
+    L 565 75
+    L 600 150
+    L 620 225
+    L 585 245
+    L 545 270
+    L 510 325
+    L 475 390
+    L 440 450
+    L 405 515
+    L 365 580
+    L 345 620
+    L 350 690
+    L 390 725
+    L 610 725
+    L 620 750
+    L 575 770
+    L 520 785
+    L 465 805
+    L 405 825
+    L 345 845
+    L 285 865
+    L 220 885
+    L 155 905
+    L 100 920
+    Z"/>
 
-  <!-- Travesaño ancho y recto para que la A conserve su lectura en tamaños pequeños. -->
-  <path d="M320 610 365 505H535L580 610Z" fill="url(#azulAigo)"/>
+  <path fill="url(#AIGO_BLUE_LIGHT)" d="
+    M 665 340
+    L 690 370
+    L 715 410
+    L 750 470
+    L 785 530
+    L 825 595
+    L 860 665
+    L 900 735
+    L 935 805
+    L 970 870
+    L 1015 920
+    L 965 930
+    L 835 930
+    L 805 900
+    L 785 850
+    L 760 800
+    L 735 745
+    L 710 695
+    L 680 640
+    L 655 600
+    L 630 560
+    L 610 545
+    L 590 550
+    L 570 560
+    L 550 575
+    L 525 580
+    L 545 535
+    L 570 490
+    L 595 445
+    L 620 400
+    L 645 360
+    Z"/>
 </svg>
