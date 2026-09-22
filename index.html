@@ -1,554 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Aigo Finance | Finanzas Digitales y Criptoactivos</title>
-
-<meta name="description" content="Aigo Finance - Finanzas digitales, tecnología blockchain y soluciones relacionadas con criptoactivos.">
-
-<meta name="robots" content="index, follow">
-
-<style>
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fb;
-    color: #172033;
-}
-
-/* MENU */
-
-header {
-    background: #ffffff;
-    border-bottom: 1px solid #dddddd;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.menu {
-    max-width: 1100px;
-    margin: auto;
-    padding: 18px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 25px;
-    font-weight: bold;
-    color: #1261ff;
-    text-decoration: none;
-}
-
-.logo span {
-    color: #172033;
-}
-
-nav a {
-    color: #172033;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-/* INICIO */
-
-.hero {
-    background: linear-gradient(135deg, #0b3ea8, #1261ff);
-    color: white;
-    padding: 100px 20px;
-}
-
-.hero-content {
-    max-width: 1100px;
-    margin: auto;
-}
-
-.hero h1 {
-    font-size: 55px;
-    max-width: 700px;
-    margin: 0 0 25px 0;
-}
-
-.hero p {
-    font-size: 20px;
-    max-width: 650px;
-    line-height: 1.6;
-}
-
-.boton {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 25px;
-    background: white;
-    color: #1261ff;
-    text-decoration: none;
-    border-radius: 7px;
-    font-weight: bold;
-}
-
-/* SECCIONES */
-
-section {
-    padding: 80px 20px;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-}
-
-.titulo {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.titulo h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.titulo p {
-    color: #687386;
-}
-
-/* SERVICIOS */
-
-.servicios {
-    background: white;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.tarjeta {
-    background: #f7f9fc;
-    border: 1px solid #e1e5ec;
-    border-radius: 12px;
-    padding: 30px;
-}
-
-.tarjeta h3 {
-    font-size: 21px;
-    margin-top: 0;
-}
-
-.tarjeta p {
-    color: #687386;
-    line-height: 1.6;
-}
-
-/* CRIPTO */
-
-.cripto {
-    background: #f5f7fb;
-}
-
-.lista {
-    background: white;
-    padding: 35px;
-    border-radius: 15px;
-    border: 1px solid #e1e5ec;
-}
-
-.lista ul {
-    padding-left: 20px;
-}
-
-.lista li {
-    margin-bottom: 12px;
-}
-
-/* NOSOTROS */
-
-.nosotros {
-    background: white;
-}
-
-.nosotros p {
-    color: #687386;
-    line-height: 1.7;
-}
-
-/* CUMPLIMIENTO */
-
-.cumplimiento {
-    background: #f5f7fb;
-}
-
-.aviso {
-    max-width: 850px;
-    margin: auto;
-    background: white;
-    border: 1px solid #e1e5ec;
-    border-radius: 12px;
-    padding: 30px;
-}
-
-.aviso p {
-    color: #687386;
-    line-height: 1.7;
-}
-
-/* CONTACTO */
-
-.contacto {
-    background: white;
-    text-align: center;
-}
-
-.email {
-    color: #1261ff;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* PIE */
-
-footer {
-    background: #101827;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-}
-
-footer p {
-    color: #aab3c2;
-}
-
-/* MOVIL */
-
-@media (max-width: 750px) {
-
-    nav {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    section {
-        padding: 60px 20px;
-    }
-
-}
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="description" content="Aigo Finance explora soluciones financieras digitales, tecnología blockchain e infraestructura para activos digitales.">
+  <meta name="robots" content="index, follow">
+  <title>Aigo Finance — Finanzas digitales, con otra perspectiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#17231e;--muted:#68766e;--green:#b9f278;--green-dark:#315c32;--paper:#f5f7f2;--white:#fff;--line:#e5eae1;--serif:Georgia,"Times New Roman",serif;--sans:"DM Sans",Arial,sans-serif;--display:Manrope,"DM Sans",Arial,sans-serif;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(245,247,242,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(23,35,30,.08)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:inline-flex;gap:10px;align-items:center;text-decoration:none;font:800 18px var(--display);letter-spacing:-.8px}.brand-mark{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;background:var(--ink);color:var(--green);font:800 19px var(--display)}.brand span:last-child{color:#789071;font-weight:500}.nav-links{display:flex;align-items:center;gap:34px}.nav-links a{font-size:13px;text-decoration:none;color:#59665e;transition:color .2s}.nav-links a:hover{color:var(--ink)}.nav-cta,.button{min-height:46px;padding:0 20px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;background:var(--ink);color:var(--white);font-weight:600;font-size:13px;text-decoration:none;transition:transform .2s,background .2s}.nav-cta:hover,.button:hover{transform:translateY(-2px);background:#304138}.menu-toggle{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);font-size:20px;cursor:pointer}
+    .hero{padding:84px 0 96px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:54px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#5e7960;font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase}.eyebrow:before{content:"";width:20px;height:1px;background:#8eb365}.hero h1{max-width:650px;margin:23px 0 20px;font:600 clamp(54px,7vw,88px)/.98 var(--display);letter-spacing:-6px}.hero h1 em{font-family:var(--serif);font-weight:400;letter-spacing:-5px;color:#62875a}.hero-copy{max-width:500px;margin:0;color:var(--muted);font-size:17px;line-height:1.8}.hero-actions{display:flex;align-items:center;gap:24px;margin-top:32px}.text-link{display:inline-flex;align-items:center;gap:9px;color:var(--ink);font-size:13px;font-weight:600;text-decoration:none}.arrow{font-size:18px;transition:transform .2s}.text-link:hover .arrow{transform:translateX(4px)}.hero-note{display:flex;align-items:center;gap:10px;margin-top:60px;color:#818b83;font-size:11px}.hero-note:before{content:"";width:30px;height:1px;background:#c7d0c2}
+    .visual{position:relative;min-height:450px;display:grid;place-items:center}.orb{position:absolute;width:min(420px,90%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 33% 28%,#e9f8d9 0,#c7ed9f 24%,#a4d677 54%,#709e59 100%);box-shadow:inset -28px -28px 60px #54784322,0 35px 80px #78976627}.orb:before,.orb:after{position:absolute;content:"";inset:10%;border:1px solid #ffffff78;border-radius:50%;transform:rotate(-28deg) scaleY(.38)}.orb:after{inset:1%;transform:rotate(53deg) scaleY(.29)}.orb-core{position:relative;z-index:1;width:86px;height:86px;display:grid;place-items:center;border-radius:28px;background:#f8fff0;color:#496841;font:800 47px var(--display);box-shadow:0 14px 35px #29451d2b;transform:rotate(-8deg)}.float-card{position:absolute;z-index:2;padding:15px 17px;border:1px solid #ffffffd9;border-radius:16px;background:#ffffffdf;box-shadow:0 14px 35px #21331b12;backdrop-filter:blur(8px)}.float-card small{display:block;margin-bottom:7px;color:#758175;font-size:10px}.float-card strong{font:700 15px var(--display)}.float-card.one{top:72px;right:0}.float-card.two{left:-8px;bottom:70px}.signal{display:inline-block;width:8px;height:8px;margin-right:7px;border-radius:50%;background:#8bc66a}
+    .ticker{background:#e9eddf;border-block:1px solid #e1e7d8}.ticker-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.ticker-label{color:#82907c;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}.ticker-item{display:flex;align-items:center;gap:9px;font:700 13px var(--display)}.coin{width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:white;color:#657d51;font-size:12px}.ticker-item small{display:block;color:#8a9586;font:400 10px var(--sans)}
+    section.content{padding:110px 0}.section-head{max-width:670px;margin-bottom:48px}.kicker{color:#688761;font-size:11px;font-weight:700;letter-spacing:1.7px;text-transform:uppercase}.section-head h2{margin:16px 0 14px;font:600 clamp(36px,5vw,56px)/1.08 var(--display);letter-spacing:-2.7px}.section-head p{max-width:540px;margin:0;color:var(--muted);font-size:15px;line-height:1.8}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{min-height:240px;padding:27px;border:1px solid var(--line);border-radius:18px;background:#fbfcf9;transition:transform .25s,border-color .25s,box-shadow .25s}.service:hover{transform:translateY(-5px);border-color:#c6d6b7;box-shadow:0 16px 34px #253c1a0b}.service-icon{width:43px;height:43px;display:grid;place-items:center;margin-bottom:27px;border-radius:14px;background:#edf3e5;color:#628452;font:600 18px var(--display)}.service h3{margin:0 0 10px;font:700 16px var(--display);letter-spacing:-.35px}.service p{margin:0;color:var(--muted);font-size:13px;line-height:1.75}.service-status{display:inline-flex;align-items:center;gap:7px;margin-top:19px;color:#788674;font-size:10px}.service-status:before{content:"";width:6px;height:6px;border-radius:50%;background:#a3bd86}
+    .vision{padding:0 0 110px}.vision-card{position:relative;overflow:hidden;padding:68px;border-radius:24px;background:#19281e;color:white}.vision-card:after{position:absolute;right:-100px;top:-210px;width:500px;height:500px;border:1px solid #b9f2782a;border-radius:50%;box-shadow:0 0 0 48px #b9f2780b,0 0 0 96px #b9f27808;content:""}.vision-inner{position:relative;z-index:1;max-width:650px}.vision .kicker{color:var(--green)}.vision h2{margin:18px 0 20px;font:500 clamp(36px,5vw,57px)/1.08 var(--display);letter-spacing:-2.6px}.vision h2 em{font-family:var(--serif);font-weight:400;color:var(--green)}.vision p{max-width:550px;margin:0;color:#b9c3b7;font-size:14px;line-height:1.9}.vision .button{margin-top:28px;background:var(--green);color:#20321e}.vision .button:hover{background:#c9f68f}
+    .compliance{display:grid;grid-template-columns:.7fr 1.3fr;gap:40px;align-items:start}.compliance h2{margin:14px 0;font:600 36px var(--display);letter-spacing:-1.6px}.compliance-copy{padding:25px 0 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.9}.compliance-copy strong{color:var(--ink)}.contact{padding:0 0 100px}.contact-panel{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:38px 42px;border:1px solid var(--line);border-radius:20px;background:#edf2e6}.contact-panel h2{margin:0 0 8px;font:700 24px var(--display);letter-spacing:-.8px}.contact-panel p{margin:0;color:var(--muted);font-size:13px}.contact-mail{color:#3e673b;font-weight:700;font-size:15px;text-decoration:none}.contact-mail:hover{text-decoration:underline}
+    footer{border-top:1px solid var(--line)}.footer-inner{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#839084;font-size:11px}.footer-brand{color:var(--ink);font:700 13px var(--display)}.footer-links{display:flex;gap:22px}.footer-links a{color:inherit;text-decoration:none}.footer-links a:hover{color:var(--ink)}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr 0.8fr;gap:20px}.hero h1{letter-spacing:-4px}.visual{min-height:360px}.services-grid{grid-template-columns:repeat(2,1fr)}.vision-card{padding:48px}.ticker-inner{flex-wrap:wrap;justify-content:flex-start;padding-block:18px}.ticker-label{width:100%}}
+    @media(max-width:640px){.wrap{width:min(var(--max),calc(100% - 36px))}.nav{height:66px}.menu-toggle{display:grid;place-items:center}.nav-links{position:absolute;top:65px;left:0;right:0;display:none;align-items:stretch;gap:0;padding:8px 18px 16px;border-bottom:1px solid var(--line);background:var(--paper)}.nav-links.open{display:flex;flex-direction:column}.nav-links a{padding:14px 8px}.nav-cta{margin-top:7px}.hero{padding:58px 0 45px}.hero-grid{grid-template-columns:1fr;gap:0}.hero h1{font-size:62px;letter-spacing:-4px}.hero-copy{font-size:15px}.hero-actions{gap:17px;flex-wrap:wrap}.hero-note{margin-top:34px}.visual{min-height:340px;margin-top:5px}.orb{width:min(300px,80vw)}.orb-core{width:70px;height:70px;font-size:38px}.float-card.one{top:33px;right:0}.float-card.two{left:0;bottom:38px}.ticker-inner{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.ticker-label{grid-column:1/-1}.ticker-item{font-size:12px}section.content{padding:76px 0}.section-head{margin-bottom:30px}.section-head h2{letter-spacing:-1.8px}.services-grid{grid-template-columns:1fr}.service{min-height:0;padding:24px}.service-icon{margin-bottom:18px}.vision{padding-bottom:76px}.vision-card{padding:36px 25px}.vision h2{letter-spacing:-1.6px}.compliance{grid-template-columns:1fr;gap:12px}.compliance h2{font-size:31px}.compliance-copy{padding-top:17px}.contact{padding-bottom:70px}.contact-panel{align-items:flex-start;flex-direction:column;padding:28px 24px}.footer-inner{padding-block:22px;align-items:flex-start;flex-direction:column}.footer-links{gap:17px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
 </head>
-
 <body>
-
-<header>
-
-<div class="menu">
-
-<a href="#inicio" class="logo">
-Aigo <span>Finance</span>
-</a>
-
-<nav>
-<a href="#inicio">Inicio</a>
-<a href="#servicios">Servicios</a>
-<a href="#cripto">Cripto</a>
-<a href="#nosotros">Nosotros</a>
-<a href="#contacto">Contacto</a>
-</nav>
-
-</div>
-
-</header>
-
-
-<section class="hero" id="inicio">
-
-<div class="hero-content">
-
-<h1>
-Aigo Finance
-</h1>
-
-<p>
-Finanzas digitales, tecnología blockchain y soluciones
-para el ecosistema de los activos digitales.
-</p>
-
-<a href="#servicios" class="boton">
-Conocer Aigo Finance
-</a>
-
-</div>
-
-</section>
-
-
-<section class="servicios" id="servicios">
-
-<div class="container">
-
-<div class="titulo">
-
-<h2>
-Nuestros servicios
-</h2>
-
-<p>
-Áreas de actividad previstas para Aigo Finance.
-</p>
-
-</div>
-
-
-<div class="grid">
-
-
-<div class="tarjeta">
-
-<h3>
-Activos digitales
-</h3>
-
-<p>
-Soluciones relacionadas con el ecosistema
-de los criptoactivos y la tecnología blockchain.
-</p>
-
-</div>
-
-
-<div class="tarjeta">
-
-<h3>
-Intercambio
-</h3>
-
-<p>
-Infraestructura orientada al intercambio de
-criptoactivos y otros activos digitales,
-cuando corresponda y exista autorización.
-</p>
-
-</div>
-
-
-<div class="tarjeta">
-
-<h3>
-Custodia
-</h3>
-
-<p>
-Proyecto de custodia y administración de
-criptoactivos mediante sistemas de seguridad
-y almacenamiento en frío.
-</p>
-
-</div>
-
-
-<div class="tarjeta">
-
-<h3>
-Transferencias
-</h3>
-
-<p>
-Soluciones tecnológicas orientadas a
-transferencias de activos digitales.
-</p>
-
-</div>
-
-
-<div class="tarjeta">
-
-<h3>
-Blockchain
-</h3>
-
-<p>
-Tecnología blockchain aplicada a las
-nuevas finanzas digitales.
-</p>
-
-</div>
-
-
-<div class="tarjeta">
-
-<h3>
-Seguridad digital
-</h3>
-
-<p>
-Infraestructura y sistemas destinados a
-proteger operaciones y activos digitales.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="cripto" id="cripto">
-
-<div class="container">
-
-<div class="titulo">
-
-<h2>
-Criptoactivos
-</h2>
-
-<p>
-Tecnología para la nueva economía digital.
-</p>
-
-</div>
-
-
-<div class="lista">
-
-<h3>
-Áreas previstas
-</h3>
-
-<ul>
-
-<li>Bitcoin</li>
-
-<li>Ethereum</li>
-
-<li>Stablecoins</li>
-
-<li>Otros criptoactivos</li>
-
-<li>Tecnología blockchain</li>
-
-<li>Almacenamiento en frío</li>
-
-<li>Infraestructura de activos digitales</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="nosotros" id="nosotros">
-
-<div class="container">
-
-<div class="titulo">
-
-<h2>
-Sobre Aigo Finance
-</h2>
-
-</div>
-
-<p>
-Aigo Finance es un proyecto orientado al desarrollo
-de soluciones financieras digitales y tecnología
-relacionada con los activos digitales.
-</p>
-
-<p>
-Nuestro objetivo es construir una infraestructura
-moderna que conecte las nuevas tecnologías
-blockchain con el ecosistema financiero digital.
-</p>
-
-</div>
-
-</section>
-
-
-<section class="cumplimiento">
-
-<div class="container">
-
-<div class="titulo">
-
-<h2>
-Cumplimiento
-</h2>
-
-</div>
-
-<div class="aviso">
-
-<p>
-Los servicios de criptoactivos que requieran
-autorización regulatoria se ofrecerán únicamente
-cuando Aigo Finance disponga de las autorizaciones
-correspondientes.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="contacto" id="contacto">
-
-<div class="container">
-
-<h2>
-Contacta con Aigo Finance
-</h2>
-
-<p>
-Para obtener información sobre el proyecto:
-</p>
-
-<a class="email" href="mailto:support@aigofinance.eu">
-support@aigofinance.eu
-</a>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<p>
-© 2026 Aigo Finance. Todos los derechos reservados.
-</p>
-
-</footer>
-
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="Aigo Finance, inicio"><span class="brand-mark" aria-hidden="true">a.</span><span>Aigo <span>Finance</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+        <a href="#servicios">Qué exploramos</a><a href="#nosotros">El proyecto</a><a href="#cumplimiento">Cumplimiento</a>
+        <a class="nav-cta" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Una nueva mirada a las finanzas</span>
+          <h1>Lo digital.<br>En <em>movimiento.</em></h1>
+          <p class="hero-copy">Exploramos la próxima generación de infraestructura financiera: tecnología blockchain y soluciones para la economía de activos digitales.</p>
+          <div class="hero-actions"><a class="button" href="#servicios">Descubre el proyecto <span aria-hidden="true">↘</span></a><a class="text-link" href="#nosotros">Nuestra visión <span class="arrow" aria-hidden="true">→</span></a></div>
+          <div class="hero-note">Un proyecto en desarrollo, construido con una visión de futuro.</div>
+        </div>
+        <div class="visual" aria-label="Ilustración abstracta de un ecosistema financiero digital" role="img"><div class="orb"></div><div class="orb-core">a.</div><div class="float-card one"><small><span class="signal"></span>Nueva economía</small><strong>Conectada por diseño</strong></div><div class="float-card two"><small>Infraestructura</small><strong>Digital desde el origen</strong></div></div>
+      </div>
+    </section>
+    <div class="ticker" aria-label="Áreas tecnológicas de interés"><div class="wrap ticker-inner"><span class="ticker-label">Un ecosistema en evolución</span><span class="ticker-item"><span class="coin">₿</span><span>Bitcoin<small>Activos digitales</small></span></span><span class="ticker-item"><span class="coin">◆</span><span>Ethereum<small>Redes blockchain</small></span></span><span class="ticker-item"><span class="coin">$</span><span>Stablecoins<small>Pagos digitales</small></span></span><span class="ticker-item"><span class="coin">⌘</span><span>Blockchain<small>Nueva infraestructura</small></span></span></div></div>
+    <section class="content" id="servicios">
+      <div class="wrap"><div class="section-head"><span class="kicker">Lo que nos mueve</span><h2>La infraestructura para lo que viene.</h2><p>Investigamos áreas que pueden ayudar a conectar la innovación tecnológica con servicios financieros digitales más accesibles.</p></div>
+        <div class="services-grid">
+          <article class="service"><div class="service-icon" aria-hidden="true">◈</div><h3>Activos digitales</h3><p>Soluciones y herramientas vinculadas al ecosistema de los criptoactivos.</p><span class="service-status">Área de exploración</span></article>
+          <article class="service"><div class="service-icon" aria-hidden="true">⇄</div><h3>Intercambio</h3><p>Infraestructura para facilitar el intercambio de activos digitales, sujeta a las autorizaciones aplicables.</p><span class="service-status">Área de exploración</span></article>
+          <article class="service"><div class="service-icon" aria-hidden="true">⬡</div><h3>Custodia</h3><p>Investigación de tecnologías de custodia y almacenamiento seguro, incluido el almacenamiento en frío.</p><span class="service-status">Área de exploración</span></article>
+          <article class="service"><div class="service-icon" aria-hidden="true">↗</div><h3>Transferencias</h3><p>Tecnología orientada al movimiento eficiente de activos dentro de redes digitales.</p><span class="service-status">Área de exploración</span></article>
+          <article class="service"><div class="service-icon" aria-hidden="true">⌘</div><h3>Blockchain</h3><p>Redes distribuidas y herramientas que impulsan nuevas formas de operar digitalmente.</p><span class="service-status">Área de exploración</span></article>
+          <article class="service"><div class="service-icon" aria-hidden="true">⌑</div><h3>Seguridad digital</h3><p>Buenas prácticas y sistemas para reforzar la seguridad de la infraestructura digital.</p><span class="service-status">Área de exploración</span></article>
+        </div>
+      </div>
+    </section>
+    <section class="vision" id="nosotros"><div class="wrap"><div class="vision-card"><div class="vision-inner"><span class="kicker">Sobre Aigo Finance</span><h2>Una idea clara.<br>Una economía <em>en transformación.</em></h2><p>Aigo Finance es un proyecto en desarrollo centrado en las finanzas digitales y la tecnología relacionada con los activos digitales. Queremos explorar cómo una infraestructura moderna puede acercar la innovación blockchain al ecosistema financiero.</p><a class="button" href="#contacto">Conversemos <span aria-hidden="true">↗</span></a></div></div></div></section>
+    <section class="content" id="cumplimiento"><div class="wrap compliance"><div><span class="kicker">Transparencia primero</span><h2>Cumplimiento</h2></div><div class="compliance-copy"><p>Aigo Finance es actualmente un proyecto en desarrollo. <strong>Los servicios que requieran autorización regulatoria solo se ofrecerán cuando se disponga de las autorizaciones correspondientes</strong> y dentro del marco normativo aplicable. La información de esta página describe áreas de interés y no constituye una oferta de servicios financieros ni asesoramiento de inversión.</p></div></div></section>
+    <section class="contact" id="contacto"><div class="wrap"><div class="contact-panel"><div><h2>¿Quieres saber más?</h2><p>Escríbenos para conocer más sobre el proyecto.</p></div><a class="contact-mail" href="mailto:support@aigofinance.eu">support@aigofinance.eu <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">a.</span><span>Aigo <span>Finance</span></span></a><span>© 2026 Aigo Finance. Todos los derechos reservados.</span><div class="footer-links"><a href="#cumplimiento">Cumplimiento</a><a href="mailto:support@aigofinance.eu">Contacto</a></div></div></footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#nav-links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-label', open ? 'Abrir menú' : 'Cerrar menú');
+      nav.classList.toggle('open', !open);
+    });
+    nav.addEventListener('click', event => {
+      if (event.target.closest('a')) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Abrir menú');
+      }
+    });
+  </script>
 </body>
 </html>
